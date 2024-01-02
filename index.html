@@ -140,6 +140,7 @@ document.onkeyup = function(e) {
 };
 
 game.onclick = function(e) {
+  if (!jogoRodando) return;
   var bala = document.createElement('div');
   bala.className = 'bala';
   bala.style.left = (parseInt(nave.style.left) + 28) + 'px';
